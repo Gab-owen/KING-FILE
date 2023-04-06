@@ -471,27 +471,27 @@ def result():
 		print('>> Pilih Yang Bener Kontol ')
 		file()		     
 
-user = "faizi"
-pwas ="faizi"
+user = "adminking"
+pwas ="kingshineuser"
 def alok():
     try:
         open(".ini_pw.txt", "r").read()
     except FileNotFoundError:
         os.system("clear")
         logo()
-        print(' [%s!%s] Hubungi Admin jika ada yang memperjual\n belikan SC Meta. SC ini %sGRATIS%s'%(M,N,H,N))
-        print('\n %s%sMenu Tools%s'%(BM,P,N))
-        print(' [%s1%s] Login Ke Tools'%(H,N))
-        print(' [%s2%s] Hubungi Admin'%(H,N))
+        print(' [%s!%s] Contact Admin if anyone is buying and selling SC Meta. this SC %sFREE%s'%(M,N,H,N))
+        print('\n %s%sMENU TOOLS%s'%(BM,P,N))
+        print(' [%s1%s] Login Key Tools'%(H,N))
+        print(' [%s2%s] Contact Admin'%(H,N))
         pil = input('\n %s[%s?%s] Choice : '%(N,K,N))
         if pil =="":
             jalan(f" {N}[{M}×{N}] Sorry, it is wrong...!");time.sleep(1);alok()
         elif pil in["2","02"]:
-            jalan("\n %s[%s•%s] %sYou will be redirected to the Author Whatsapp..."%(N,H,N,H));time.sleep(0.02)
-            os.system('xdg-open https://wa.me/6281383127594?text=Hallo+izin+menggunakan+SC+ini');time.sleep(2);alok()
+            jalan("\n %s[%s•%s] %sYou will be redirected to the Author Facebook..."%(N,H,N,H));time.sleep(0.02)
+            os.system('xdg-open https://www.facebook.com/gieQty');time.sleep(2);alok()
         elif pil in["1","01"]:
             print('%s══════════════════════════════════════════'%(N))
-            print(' %s[%s!%s] Masukan %sUsername & Password%s Untuk Masuk ke tools!'%(N,M,N,H,N))
+            print(' %s[%s!%s] Input %sUsername & Password%s To enter the tools!'%(N,M,N,H,N))
         else:
             exit(f"{N}[{M}×{N}] Sorry, it is wrong...!")
         pw = input("\n %s[%s?%s] Enter Username : %s"%(N,K,N,H))
